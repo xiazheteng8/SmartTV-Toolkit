@@ -1,6 +1,6 @@
  <div align="center">
 
-<img src="./logo.png" width="160" alt="TV Studio Logo">
+<img src="./logo.png" width="160" alt="[TV Studio Logo](https://github.com/xiazheteng8/TV-Studio/blob/main/logo.ico)">
 
 # TV Studio
 
