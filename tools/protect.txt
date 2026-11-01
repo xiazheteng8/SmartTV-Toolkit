@@ -1,4 +1,0 @@
-com.oversea.aslauncher
-com.dstudio.atvlauncher.free
-com.dangbei.tvlauncher
-com.spocky.projengmenu

@@ -1,3 +1,0 @@
-com.mitv.tvhome
-com.xiaomi.smarthome.tv
-com.xiaomi.smarthome.tv.service

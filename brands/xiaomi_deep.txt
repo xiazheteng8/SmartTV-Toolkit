@@ -1,9 +1,0 @@
-com.miui.player
-com.miui.screenrecorder
-/com.zhiliaoapp.musically-UF3OVQc12VEJ7UcbWE3Wow
-com.qualcomm.qti.poweroffalarm
-com.miui.gallery
-com.mfashiongallery.emag
-com.miui.screenshot
-/com.spotify.music-Pll8Mo8iirQKiLV2yCfxLQ
-/com.miui.videoplayer-9P6c3ZL5gCKPOZhugGZLCg

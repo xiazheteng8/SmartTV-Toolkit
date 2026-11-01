@@ -1,0 +1,40 @@
+{
+  "version": "3.0.1-script-rules",
+  "fallback": {
+    "group": "深度精简",
+    "reason": "未命中明确用途特征，按深度精简列出；依赖未知，请结合固件与实际功能判断。"
+  },
+  "rules": [
+    {
+      "group": "桌面精简",
+      "pattern": "launcher|tvhome|leanbacklauncher|(?:^|\\.)(?:home|tvdesktop|desktop)(?:\\.|$)",
+      "reason": "疑似电视桌面或主页组件；处理后可能影响主页入口，请自行确认替代桌面。"
+    },
+    {
+      "group": "深度精简",
+      "pattern": "^android$|^com\\.android\\.(systemui|settings$|shell$|permissioncontroller|packageinstaller|networkstack|providers\\.(settings|downloads|media)|keychain|server\\.)|^com\\.google\\.android\\.(permissioncontroller|packageinstaller|gms$|gsf$)|(?:^|\\.)(?:bootanimation|bootservice|powerkeeper|powermanager|shutdown|recovery|adb|adbd|framework|systemserver|systemservice|platformservice|settingsservice|tvservicemanager|systemprovider|securitycenter|keystore|credentialmanager|devicepolicy|updateengine|otaupdate)(?:\\.|$)|(?:^|\\.)(?:settings|tvsettings|mtktvsettings|powerservice|poweron|standby)(?:$)",
+      "reason": "启动、电源、设置、ADB、权限或基础服务，可能影响系统可用性；仅供参考，由你决定是否处理。",
+      "core": true
+    },
+    {
+      "group": "深度精简",
+      "pattern": "(?:^|\\.)(?:soundrecorder|audiorecorder|recorder|screenrecorder|screenrecord)(?:\\.|$)",
+      "reason": "录音、录屏属于有用的可选应用；不使用时才考虑卸载，相关功能将失效。"
+    },
+    {
+      "group": "深度精简",
+      "pattern": "audio|sound|dolby|dts|hdmi|cec|remote|infrared|irservice|inputmethod|keyboard|inputdevice|bluetooth|wifi|wlan|ethernet|connectivity|drm|widevine|account|voice|speech|tvinput|tuner|livetv|cast|airplay|miracast|dlna|miplay|upnp|smartshare|assistant|push|payment|hardware|usb|video.?out|display|graphics|gpu|vout|surface|sensor|ethernet|nfc|serialport|uart|camera|halservice",
+      "reason": "涉及 USB、音视频输出、显示、遥控、输入、网络或其他硬件及系统功能；归入深度精简，仅供参考。"
+    },
+    {
+      "group": "深度精简",
+      "pattern": "(?:^|\\.)(?:recorder|soundrecorder|screenrecorder|screenrecord|camera|gallery|music|video|player|calendar|alarm|weather|browser|filemanager|calculator|handbook|karaoke|gamecenter|games)(?:\\.|$)|com\\.demo\\.video|^com\\.(?:netflix|google\\.android\\.youtube|youku|qiyi|tencent\\.qqlive)|^tv\\.danmaku\\.bili",
+      "reason": "可选但有用的应用，卸载会失去对应功能，应确认不使用并准备替代应用。"
+    },
+    {
+      "group": "普通精简",
+      "pattern": "^com\\.miui\\.(analytics|systemAdSolution)$|^com\\.xiaomi\\.mistat(?:\\.|$)|^com\\.tcl\\.(ads|adservice)$|^com\\.hisense\\.(ads|adservice)$|^com\\.skyworth\\.(ads|adservice)$|^com\\.konka\\.(ads|adservice)$|(?:^|\\.)(?:advert|advertising|adservice|shopping|promotion|demoad|analytics)(?:\\.|$)|(?:^|\\.)(?:ads|adserver|recommend|recommendation|recommendservice|recommender|pushad|promotionservice|mall|storefront)(?:\\.|$)",
+      "reason": "广告、推荐、推广、统计或购物组件候选；仅供参考，请根据实际用途决定。"
+    }
+  ]
+}

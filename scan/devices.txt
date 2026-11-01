@@ -1,3 +1,0 @@
-List of devices attached
-192.168.11.101:5555	device
-
