@@ -1,5 +1,0 @@
-using System;using System.IO;using System.Linq;using System.Collections.Generic;using System.Threading.Tasks;using System.Windows;using System.Windows.Controls;using System.Windows.Data;
-public partial class TV {
-
- void ApplyRiskRows(){var style=new Style(typeof(DataGridRow));var t=new DataTrigger{Binding=new Binding("HighRisk"),Value=true};t.Setters.Add(new Setter(Control.ForegroundProperty,Color("#BE3349")));t.Setters.Add(new Setter(Control.BackgroundProperty,Color("#FFF3F4")));style.Triggers.Add(t);grid.RowStyle=style;var template=new DataTemplate();var border=new FrameworkElementFactory(typeof(Border));border.SetValue(Border.PaddingProperty,new Thickness(16,10,16,12));var text=new FrameworkElementFactory(typeof(TextBlock));text.SetBinding(TextBlock.TextProperty,new Binding("AiOpinion"));text.SetValue(TextBlock.TextWrappingProperty,TextWrapping.Wrap);border.AppendChild(text);template.VisualTree=border;grid.RowDetailsTemplate=template;grid.RowDetailsVisibilityMode=DataGridRowDetailsVisibilityMode.VisibleWhenSelected;}
-}
