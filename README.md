@@ -6,7 +6,7 @@
 
 ## 视频教程
 
-[观看现有视频教程](https://youtu.be/TDOmv45A0f8) · [观看3.2.0 视频教程](https://youtu.be/L17_W1zmLpc)。将于2026-11-8 17:00定时发布
+[观看现有视频教程](https://youtu.be/TDOmv45A0f8) · [观看3.2.0 视频教程](https://youtu.be/L17_W1zmLpc)。将于2026-11-10 17:00定时发布
 
 ## 下载与安装
 
